@@ -4,6 +4,7 @@ import { PrismicPreview } from "@prismicio/next";
 import { repositoryName } from "@/prismicio";
 import { seo } from "@/lib/seo";
 import { inter } from "@/lib/font";
+import "@/styles/tailwind.css";
 
 export const metadata: Metadata = {
   metadataBase: seo.url,
