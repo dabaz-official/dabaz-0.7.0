@@ -3,6 +3,7 @@ import { PrismicPreview } from "@prismicio/next";
 
 import { repositoryName } from "@/prismicio";
 import { seo } from "@/lib/seo";
+import { inter } from "@/lib/font";
 
 export const metadata: Metadata = {
   metadataBase: seo.url,
@@ -70,11 +71,15 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
-    <html lang="en">
+    <html
+      lang="en"
+      suppressHydrationWarning
+      className={`${inter.variable} m-0 p-0 h-full font-sans antialiased`}
+    >
       <body>{children}</body>
       <PrismicPreview repositoryName={repositoryName} />
     </html>
