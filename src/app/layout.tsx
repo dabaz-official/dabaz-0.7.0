@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/react";
 import { PrismicPreview } from "@prismicio/next";
 
 import { repositoryName } from "@/prismicio";
@@ -79,9 +80,12 @@ export default function RootLayout({
     <html
       lang="en"
       suppressHydrationWarning
-      className={`${inter.variable} m-0 p-0 h-full font-sans antialiased`}
+      className={`${inter.variable} m-0 p-0 h-full font-sans antialiased bg-blue-300`}
     >
-      <body>{children}</body>
+      <body>
+        {children}
+        <Analytics />
+      </body>
       <PrismicPreview repositoryName={repositoryName} />
     </html>
   );
