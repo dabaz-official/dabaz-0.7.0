@@ -7,6 +7,7 @@ import { seo } from "@/lib/seo";
 import { inter } from "@/lib/font";
 import "@/styles/tailwind.css";
 import "@/styles/styles.css";
+import Header from "@/components/layout/Header";
 
 export const metadata: Metadata = {
   metadataBase: seo.url,
@@ -84,10 +85,13 @@ export default function RootLayout({
       className={`${inter.variable} m-0 p-0 h-full font-sans antialiased`}
     >
       <body className="flex h-full flex-col">
-        {children}
-        <Analytics />
+        <Header />
+        <main>
+          {children}
+          <Analytics />
+        </main>
       </body>
       <PrismicPreview repositoryName={repositoryName} />
     </html>
   );
-}
+};
