@@ -1,4 +1,10 @@
 export const navigationItems = [
-  { href: '/blog', text: 'Blog' },
-  { href: '/projects', text: 'Projects' },
+  {
+    label: "Blog",
+    href: "/blog",
+  },
+  {
+    label: "Projects",
+    href: '/projects',
+  },
 ];
