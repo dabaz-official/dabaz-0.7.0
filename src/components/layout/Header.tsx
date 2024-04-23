@@ -15,23 +15,23 @@ export default function Header() {
     <nav
       aria-label="Header"
       className={cn(
-        "bg-transparent fixed top-0 left-0 right-0 z-[100] p-4 md:px-6", scrolled && "bg-black/80 border-b border-neutral-800 shadow-sm backdrop-blur-lg"
+        "bg-transparent fixed top-0 left-0 right-0 z-[100] p-4 sm:px-6", scrolled && "bg-black/80 border-b border-neutral-800 shadow-sm backdrop-blur-lg"
       )}
     >
-      <div className="mx-auto flex max-w-6xl flex-col justify-between font-medium text-white md:flex-row md:items-center">
+      <div className="mx-auto flex max-w-6xl flex-col justify-between font-medium text-white sm:flex-row sm:items-center">
         <Link
           href="/"
           className="flex items-center gap-2 group"
         >
-          <Logo className="h-6 md:h-8 w-auto group-hover:rotate-180 duration-500" />
-          <p className="text-xl md:text-2xl font-bold tracking-tight">
+          <Logo className="h-6 sm:h-8 w-auto group-hover:rotate-180 duration-500" />
+          <p className="text-xl sm:text-2xl font-bold tracking-tight duration-500">
             DabAZ
           </p>
           <span className="sr-only">
             DabAZ Home Page
           </span>
         </Link>
-        <ul className="flex gap-6 items-center">
+        <ul className="hidden sm:flex gap-6 items-center">
         {navigationItems.map((item) => (
           <li key={item.label}>
             <Button
