@@ -7,21 +7,21 @@ import { seo } from "@/lib/seo";
 export const metadata: Metadata = {
   metadataBase: seo.url,
   title: {
-    template: '%s | DabAZ',
+    template: "%s | DabAZ",
     default: seo.title,
   },
   description: seo.description,
 
   icons: {
-    icon: '/favicon/favicon.ico',
-    shortcut: '/favicon/favicon.ico',
-    apple: '/favicon/apple-touch-icon.png',
+    icon: "/favicon/favicon.ico",
+    shortcut: "/favicon/favicon.ico",
+    apple: "/favicon/apple-touch-icon.png",
   },
 
-  referrer: 'origin-when-cross-origin',
-  keywords: ['personal website', 'technology', 'entrepreneurship', 'innovation', 'networking', 'community', 'artificial intelligence', '3D printing', 'software development', 'startup tips', 'music production', 'rapper', 'front-end development', 'DabAZ', 'Diebold Dai', 'dabaz_official'],
+  referrer: "origin-when-cross-origin",
+  keywords: ["personal website", "technology", "entrepreneurship", "innovation", "networking", "community", "artificial intelligence", "3D printing", "software development", "startup tips", "music production", "rapper", "front-end development", "DabAZ", "Diebold Dai", "dabaz_official"],
   authors: [
-    { name: 'DabAZ', url: 'https://dabaz.me' }
+    { name: "DabAZ", url: "https://dabaz.me" }
   ],
   formatDetection: {
     email: true,
@@ -36,16 +36,16 @@ export const metadata: Metadata = {
       index: true,
       follow: true,
       noimageindex: false,
-      'max-video-preview': 15,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
+      "max-video-preview": 15,
+      "max-image-preview": "large",
+      "max-snippet": -1,
     },
   },
 
   openGraph: {
     title: seo.title,
     description: seo.description,
-    url: 'https://dabaz.me',
+    url: "https://dabaz.me",
     siteName: seo.siteName,
     images: [
       {
@@ -55,13 +55,13 @@ export const metadata: Metadata = {
         alt: seo.imageAlt,
       },
     ],
-    locale: 'en_US',
-    type: 'website',
+    locale: "en_US",
+    type: "website",
   },
 
   twitter: {
-    card: 'summary_large_image',
-    creator: '@dabaz_official',
+    card: "summary_large_image",
+    creator: "@dabaz_official",
     title: seo.title,
     description: seo.description,
     images: [seo.imageSrc],
