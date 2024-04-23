@@ -6,6 +6,7 @@ import { repositoryName } from "@/prismicio";
 import { seo } from "@/lib/seo";
 import { inter } from "@/lib/font";
 import "@/styles/tailwind.css";
+import "@/styles/styles.css";
 
 export const metadata: Metadata = {
   metadataBase: seo.url,
@@ -80,9 +81,9 @@ export default function RootLayout({
     <html
       lang="en"
       suppressHydrationWarning
-      className={`${inter.variable} m-0 p-0 h-full font-sans antialiased bg-blue-300`}
+      className={`${inter.variable} m-0 p-0 h-full font-sans antialiased`}
     >
-      <body>
+      <body className="flex h-full flex-col">
         {children}
         <Analytics />
       </body>
