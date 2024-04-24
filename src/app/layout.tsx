@@ -80,7 +80,7 @@ export default function RootLayout({
     <html
       lang="en"
       suppressHydrationWarning
-      className={`${inter.variable} m-0 p-0 h-full font-sans antialiased bg-[#070815]`}
+      className={`${inter.variable} m-0 p-0 h-full font-sans antialiased bg-[#070815] text-white`}
     >
       <body className="flex h-full flex-col">
         <Header />
