@@ -1,8 +1,6 @@
 import { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/react";
-import { PrismicPreview } from "@prismicio/next";
 
-import { repositoryName } from "@/prismicio";
 import { seo } from "@/lib/seo";
 import { inter } from "@/lib/font";
 import "@/styles/tailwind.css";
@@ -91,7 +89,6 @@ export default function RootLayout({
           <Analytics />
         </main>
       </body>
-      <PrismicPreview repositoryName={repositoryName} />
     </html>
   );
 };
