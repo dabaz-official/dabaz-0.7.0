@@ -1,19 +1,19 @@
 import { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/react";
 
-import { seo } from "@/lib/seo";
+import { seo } from "@/config/seo";
 import { inter } from "@/lib/font";
 import "@/styles/tailwind.css";
 import "@/styles/styles.css";
 import Header from "@/components/layout/Header";
 
 export const metadata: Metadata = {
-  metadataBase: seo.url,
+  metadataBase: seo.home.url,
   title: {
     template: "%s | DabAZ",
-    default: seo.title,
+    default: seo.home.title,
   },
-  description: seo.description,
+  description: seo.home.description,
 
   icons: {
     icon: "/favicon/favicon.ico",
@@ -46,16 +46,16 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: seo.title,
-    description: seo.description,
+    title: seo.home.title,
+    description: seo.home.description,
     url: "https://dabaz.me",
-    siteName: seo.siteName,
+    siteName: seo.home.siteName,
     images: [
       {
-        url: seo.imageSrc,
+        url: seo.home.imageSrc,
         width: 1920,
         height: 1080,
-        alt: seo.imageAlt,
+        alt: seo.home.imageAlt,
       },
     ],
     locale: "en_US",
@@ -65,9 +65,9 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     creator: "@dabaz_official",
-    title: seo.title,
-    description: seo.description,
-    images: [seo.imageSrc],
+    title: seo.home.title,
+    description: seo.home.description,
+    images: seo.home.imageSrc,
   },
 };
 
