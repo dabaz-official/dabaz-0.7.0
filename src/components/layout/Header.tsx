@@ -28,7 +28,7 @@ export default function Header() {
             className="flex items-center gap-2 group z-[999]"
           >
             <Logo className="h-6 sm:h-8 w-auto group-hover:rotate-180 duration-500" />
-            <p className="text-xl sm:text-2xl font-bold tracking-tight duration-500">
+            <p className="text-xl sm:text-2xl font-medium tracking-tight duration-500">
               DabAZ
             </p>
             <span className="sr-only">
