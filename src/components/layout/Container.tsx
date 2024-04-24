@@ -1,51 +1,28 @@
-import React from "react";
+import clsx from "clsx";
 
-import { cn } from "@/lib/utils";
+type BoundedProps = {
+  as?: React.ElementType;
+  className?: string;
+  children: React.ReactNode;
+};
 
-type ContainerProps = React.ComponentPropsWithoutRef<'div'>
-
-const OuterContainer = React.forwardRef<HTMLDivElement, ContainerProps>(
-  function OuterContainer({ className, children, ...props }, ref) {
-    return (
-      <div ref={ref} className={cn('p-4 sm:px-6', className)} {...props}>
-        <div className="mx-auto max-w-6xl">
-          {children}
-        </div>
+export default function Bounded({
+  as: Comp = "section",
+  className,
+  children,
+  ...restProps
+}: BoundedProps) {
+  return (
+    <Comp
+      className={clsx(
+        "px-4 py-14 first:pt-10 md:px-6 md:py-20 lg:py-24",
+        className,
+      )}
+      {...restProps}
+    >
+      <div className="mx-auto flex w-full max-w-6xl flex-col items-center">
+        {children}
       </div>
-    );
-  }
-);
-
-const InnerContainer = React.forwardRef<HTMLDivElement, ContainerProps>(
-  function InnerContainer(
-    { className, children, ...props }: ContainerProps,
-    ref
-  ) {
-    return (
-      <div
-        ref={ref}
-        className={cn('relative px-4 sm:px-8 lg:px-12', className)}
-        {...props}
-      >
-        <div className="mx-auto max-w-2xl lg:max-w-5xl">    
-          {children}
-        </div>
-      </div>
-    );
-  }
-);
-
-const ContainerComponent = React.forwardRef<HTMLDivElement, ContainerProps>(
-  function Container({ children, ...props }: ContainerProps, ref) {
-    return (
-      <OuterContainer ref={ref} {...props}>
-        <InnerContainer>{children}</InnerContainer>
-      </OuterContainer>
-    );
-  }
-);
-
-export const Container = Object.assign(ContainerComponent, {
-  Outer: OuterContainer,
-  Inner: InnerContainer,
-});
+    </Comp>
+  );
+};

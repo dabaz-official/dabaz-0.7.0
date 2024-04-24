@@ -3,10 +3,10 @@
 import Link from "next/link";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import clsx from "clsx";
 
 import { Logo } from "@/components/common/Logo";
 import { useScrollTop } from "@/hooks/use-scroll-top";
-import { cn } from "@/lib/utils";
 import { navigationItems } from "@/config/navigation-items";
 import { Button } from "@/components/ui/Button";
 
@@ -17,7 +17,7 @@ export default function Header() {
   return (
     <nav
       aria-label="Header"
-      className={cn(
+      className={clsx(
         "bg-transparent fixed top-0 left-0 right-0 z-[100] p-4 sm:px-6", scrolled && "bg-black/80 border-b border-neutral-800 shadow-sm backdrop-blur-lg"
       )}
     >
@@ -50,7 +50,7 @@ export default function Header() {
 
         {/* Mobile menu */}
         <div
-          className={cn(
+          className={clsx(
             "ga-4 fixed bottom-0 left-0 right-0 top-0 z-40 flex flex-col items-end bg-[#070815] pr-4 pt-14 transition-transform duration-500 ease-in-out motion-reduce:transition-none sm:hidden",
             open ? "translate-x-0" : "translate-x-[100%]",
           )}

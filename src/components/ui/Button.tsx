@@ -1,6 +1,5 @@
 import Link from "next/link";
-
-import { cn } from "@/lib/utils";
+import clsx from "clsx";
 
 const variantStyles = {
   primary:
@@ -29,15 +28,15 @@ export function Button({
   href,
   ...props
 }: ButtonProps) {
-  const classname = cn(
+  const cn = clsx(
     "inline-flex items-center gap-2 justify-center outline-offset-2 transition active:transition-none duration-200 text-md",
     variantStyles[variant],
     className
   )
 
   return href ? (
-    <Link href={href} className={classname} {...(props as any)} />
+    <Link href={href} className={cn} {...(props as any)} />
   ) : (
-    <button className={classname} {...(props as any)} />
+    <button className={cn} {...(props as any)} />
   )
 };
