@@ -18,7 +18,7 @@ export default function Header() {
     <nav
       aria-label="Header"
       className={clsx(
-        "bg-transparent fixed top-0 left-0 right-0 z-[100] p-4 sm:px-6", scrolled && "bg-black/80 border-b border-neutral-800 shadow-sm backdrop-blur-lg"
+        "bg-transparent fixed top-0 left-0 right-0 z-[100] p-4 sm:px-6", scrolled && "bg-black/80 border-b border-slate-800 shadow-sm backdrop-blur-lg"
       )}
     >
       <div className="mx-auto flex max-w-6xl flex-col justify-between font-medium text-white sm:flex-row sm:items-center">
@@ -73,7 +73,7 @@ export default function Header() {
                 key={item.label}
                 href={item.href}
                 onClick={() => setOpen(false)}
-                className="block px-3 text-2xl first:mt-8 text-neutral-300 hover:text-white duration-300"
+                className="block px-3 text-2xl first:mt-8 text-slate-300 hover:text-white duration-300"
               >
                 {item.label}
               </Link>
@@ -81,7 +81,7 @@ export default function Header() {
             <Link
               href="mailto:dabaz@dabaz.me"
               onClick={() => setOpen(false)}
-              className="block px-3 text-2xl first:mt-8 text-neutral-300 hover:text-white duration-300"
+              className="block px-3 text-2xl first:mt-8 text-slate-300 hover:text-white duration-300"
             >
               Contact
             </Link>

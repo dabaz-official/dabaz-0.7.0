@@ -13,7 +13,7 @@ export default function Hero() {
           {homeTexts.hero.heading}
         </h1>
         <div className="mx-auto mt-6 max-w-lg text-center">
-          <p className="text-balance text-neutral-300 text-xl md:text-2xl">
+          <p className="text-balance text-slate-300 text-xl md:text-2xl">
             {homeTexts.hero.description}
           </p>
         </div>
