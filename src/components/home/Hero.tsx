@@ -18,7 +18,7 @@ export default function Hero() {
               {home.hero.description}
             </p>
           </div>
-          <div className="glass-container mt-16 w-96 mx-auto">
+          <div className="glass-container mt-16 w-80 mx-auto">
             <div className="absolute inset-0 -z-10 bg-blue-500/30 blur-2xl filter" />
             <Image
               src={home.hero.imgSrc}
