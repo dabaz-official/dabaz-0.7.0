@@ -6,8 +6,8 @@ body {
 }
 
 ::selection {
-  background-color: theme("colors.orange.500");
-  color: theme("colors.orange.950");
+  background-color: theme("colors.blue.500");
+  color: theme("colors.blue.950");
 }
 
 .glass-container {
