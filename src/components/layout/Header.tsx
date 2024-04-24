@@ -25,7 +25,7 @@ export default function Header() {
         <div className="flex items-center justify-between">
           <Link
             href="/"
-            className="flex items-center gap-2 group z-[999]"
+            className="flex items-center gap-2 group z-[1001]"
           >
             <Logo className="h-6 sm:h-8 w-auto group-hover:rotate-180 duration-500" />
             <p className="text-xl sm:text-2xl font-medium tracking-tight duration-500">
@@ -51,7 +51,7 @@ export default function Header() {
         {/* Mobile menu */}
         <div
           className={clsx(
-            "ga-4 fixed bottom-0 left-0 right-0 top-0 z-40 flex flex-col items-end bg-[#070815] pr-4 pt-14 transition-transform duration-500 ease-in-out motion-reduce:transition-none sm:hidden",
+            "ga-4 fixed bottom-0 left-0 right-0 top-0 z-[999] flex flex-col items-end bg-[#070815] pr-4 pt-14 transition-transform duration-500 ease-in-out motion-reduce:transition-none sm:hidden",
             open ? "translate-x-0" : "translate-x-[100%]",
           )}
         >
