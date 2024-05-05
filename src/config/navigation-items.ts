@@ -1,10 +1,10 @@
 export const navigationItems = [
   {
-    label: "Blog",
-    href: "/blog",
+    label: "About",
+    href: "/about",
   },
   {
-    label: "Projects",
-    href: '/projects',
+    label: "Crafts",
+    href: '/crafts',
   },
 ];
