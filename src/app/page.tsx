@@ -1,10 +1,11 @@
 import Hero from "@/components/home/Hero";
-import BlogSection from "@/components/home/BlogSection";
+import Crafts from "@/components/home/Crafts";
 
 export default function Home() {
   return (
     <div>
       <Hero />
+      <Crafts />
     </div>
   );
 }

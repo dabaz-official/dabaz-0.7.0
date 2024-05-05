@@ -1,20 +1,15 @@
 import home from "@/config/home";
 import Bounded from "@/components/layout/Bounded";
 
-export default function BlogSection() {
+export default function Crafts() {
   return (
     <Bounded>
-      <h2 className="text-balance text-center text-4xl font-medium md:text-6xl">
-        {home.blog.heading}
-        <br />
-        <span className="bg-gradient-to-b from-yellow-100 to-yellow-500 bg-clip-text not-italic text-transparent">
-          {home.blog.heading2}
-        </span>
-        {home.blog.heading3}
+      <h2 className="text-balance text-center text-5xl font-medium md:text-7xl bg-gradient-to-b from-yellow-100 to-yellow-500 bg-clip-text not-italic text-transparent">
+        {home.crafts.heading}
       </h2>
       <div className="mx-auto mt-6 max-w-lg text-center">
         <p className="text-balance text-slate-300 text-xl md:text-2xl">
-        {home.blog.description}
+        {home.crafts.description}
         </p>
       </div>
 
