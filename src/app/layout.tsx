@@ -22,10 +22,25 @@ export const metadata: Metadata = {
   },
 
   referrer: "origin-when-cross-origin",
-  keywords: ["personal website", "technology", "entrepreneurship", "innovation", "networking", "community", "artificial intelligence", "3D printing", "software development", "startup tips", "music production", "rapper", "front-end development", "DabAZ", "Diebold Dai", "dabaz_official"],
-  authors: [
-    { name: "DabAZ", url: "https://dabaz.me" }
+  keywords: [
+    "personal website",
+    "technology",
+    "entrepreneurship",
+    "innovation",
+    "networking",
+    "community",
+    "artificial intelligence",
+    "3D printing",
+    "software development",
+    "startup tips",
+    "music production",
+    "rapper",
+    "front-end development",
+    "DabAZ",
+    "Diebold Dai",
+    "dabaz_official",
   ],
+  authors: [{ name: "DabAZ", url: "https://dabaz.me" }],
   formatDetection: {
     email: true,
     address: false,
@@ -80,7 +95,7 @@ export default function RootLayout({
     <html
       lang="en"
       suppressHydrationWarning
-      className={`${inter.variable} m-0 p-0 h-full font-sans antialiased bg-[#070815] text-white`}
+      className={`${inter.variable} m-0 h-full bg-[#070815] p-0 font-sans text-white antialiased`}
     >
       <body className="flex h-full flex-col">
         <Header />
@@ -91,4 +106,4 @@ export default function RootLayout({
       </body>
     </html>
   );
-};
+}
