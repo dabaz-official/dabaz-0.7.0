@@ -1,3 +1,6 @@
+import Image from "next/image";
+import Link from "next/link";
+
 import home from "@/config/home";
 import Bounded from "@/components/layout/Bounded";
 
@@ -13,10 +16,19 @@ export default function Crafts() {
         </p>
       </div>
 
-      <div className="mt-16 grid max-w-4xl grid-rows-[auto_auto_auto] gap-8 md:grid-cols-3 md:gap-10">
-        <div className="glass-container">
-          
-        </div>
+      <div className="mt-16 grid grid-rows-[auto_auto_auto] gap-8 md:grid-cols-3 md:gap-10">
+        <Link
+          href={home.crafts.links.}
+          className="glass-container group"
+        >
+          <Image
+            src={home.hero.imgSrc}
+            alt={home.hero.imgAlt}
+            width={1208}
+            height={1208}
+            className="rounded-2xl group-hover:scale-110 transition-transform duration-500"
+          />
+        </Link>
       </div>
     </Bounded>
   );
