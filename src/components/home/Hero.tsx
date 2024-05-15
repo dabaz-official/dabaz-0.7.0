@@ -10,7 +10,7 @@ export default function Hero() {
       <StarGrid />
       <Bounded>
         <div className="relative">
-          <h1 className="text-balance text-center text-5xl font-medium md:text-7xl">
+          <h1 className="text-balance text-center text-5xl md:text-7xl">
             {home.hero.heading}
           </h1>
           <div className="mx-auto mt-6 max-w-lg text-center">

@@ -73,7 +73,7 @@ export default function Header() {
                 key={item.label}
                 href={item.href}
                 onClick={() => setOpen(false)}
-                className="block px-3 text-2xl first:mt-8 text-slate-300 hover:text-white duration-300"
+                className="block px-3 text-2xl first:mt-8 text-slate-300 hover:text-white duration-300 font-normal"
               >
                 {item.label}
               </Link>
@@ -81,7 +81,7 @@ export default function Header() {
             <Link
               href="mailto:dabaz@dabaz.me"
               onClick={() => setOpen(false)}
-              className="block px-3 text-2xl first:mt-8 text-slate-300 hover:text-white duration-300"
+              className="block px-3 text-2xl first:mt-8 text-slate-300 hover:text-white duration-300 font-normal"
             >
               Contact
             </Link>
@@ -95,6 +95,7 @@ export default function Header() {
             <Button
               variant="ghost"
               href={item.href}
+              className="font-normal"
             >
               {item.label}
             </Button>
@@ -103,6 +104,7 @@ export default function Header() {
           <Button
             variant="crazy"
             href="mailto:dabaz@dabaz.me"
+            className="font-normal"
           >
             Contact
           </Button>
