@@ -8,7 +8,7 @@ const home = {
   crafts: {
     heading: "Crafts",
     description: "Introducing my crafts or ideas on tech, dev, cybersecurity, music, and life.",
-  }
+  },
 };
 
 export default home;
