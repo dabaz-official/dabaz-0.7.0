@@ -2,10 +2,11 @@ import { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/react";
 
 import { seo } from "@/config/seo";
-import { inter } from "@/lib/font";
 import "@/styles/tailwind.css";
 import "@/styles/styles.css";
 import Header from "@/components/layout/Header";
+import { fontSans, fontMono, fontSerif } from "./fonts";
+import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = {
   metadataBase: seo.home.url,
@@ -95,7 +96,10 @@ export default function RootLayout({
     <html
       lang="en"
       suppressHydrationWarning
-      className={`${inter.variable} m-0 h-full bg-[#070815] p-0 font-sans text-white antialiased`}
+      className={cn(
+        "m-0 h-full bg-[#070815] p-0 font-sans text-white antialiased",
+        fontSans.variable, fontMono.variable, fontSerif.variable
+      )}
     >
       <body className="flex h-full flex-col">
         <Header />
