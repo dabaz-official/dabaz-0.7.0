@@ -7,6 +7,7 @@ import "@/styles/styles.css";
 import Header from "@/components/layout/Header";
 import { fontSans, fontMono, fontSerif } from "./fonts";
 import { cn } from "@/lib/utils";
+import Footer from "@/components/layout/Footer";
 
 export const metadata: Metadata = {
   metadataBase: seo.home.url,
@@ -107,6 +108,7 @@ export default function RootLayout({
           {children}
           <Analytics />
         </main>
+        <Footer />
       </body>
     </html>
   );
