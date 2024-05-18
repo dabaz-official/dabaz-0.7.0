@@ -3,9 +3,6 @@
 export default function Footer() {
   return (
     <footer className="w-full items-center justify-center text-center">
-      <p className="text-[12rem] text-center -mb-12">
-        DABAZ
-      </p>
       <p className="mb-6">
         ©️ 2024 DabAZ. All rights reserved
         <br />
