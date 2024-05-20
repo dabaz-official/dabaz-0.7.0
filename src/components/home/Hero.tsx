@@ -6,7 +6,7 @@ import { Send } from "lucide-react";
 
 const Hero = () => {
   return (
-    <div className="">
+    <div className="h-screen justify-center items-center flex flex-col">
       <Spotlights />
       <GridBackground />
       <div className="flex justify-center relative my-20 z-10">
