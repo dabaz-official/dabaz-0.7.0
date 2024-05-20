@@ -68,16 +68,6 @@ export default function Header() {
           </button>
 
           <div className="grid justify-items-end gap-8">
-            {navigationItems.map((item) => (
-              <Link
-                key={item.label}
-                href={item.href}
-                onClick={() => setOpen(false)}
-                className="block px-3 text-2xl first:mt-8 text-slate-300 hover:text-white duration-300 font-normal"
-              >
-                {item.label}
-              </Link>
-            ))}
             <Link
               href="mailto:dabaz@dabaz.me"
               onClick={() => setOpen(false)}
@@ -90,17 +80,7 @@ export default function Header() {
 
         {/* Desktop menu */}
         <ul className="hidden sm:flex gap-6 items-center">
-        {navigationItems.map((item) => (
-          <li key={item.label}>
-            <Button
-              variant="ghost"
-              href={item.href}
-              className="font-normal"
-            >
-              {item.label}
-            </Button>
-          </li>
-        ))}
+          
           <Button
             variant="crazy"
             href="mailto:dabaz@dabaz.me"
