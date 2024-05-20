@@ -79,7 +79,7 @@ export default function Header() {
               </Link>
             ))}
             <Link
-              href="/contact"
+              href="mailto:dabaz@dabaz.me"
               onClick={() => setOpen(false)}
               className="block px-3 text-2xl first:mt-8 text-slate-300 hover:text-white duration-300 font-normal"
             >
@@ -103,7 +103,7 @@ export default function Header() {
         ))}
           <Button
             variant="crazy"
-            href="/contact"
+            href="mailto:dabaz@dabaz.me"
             className="font-normal"
           >
             Contact
