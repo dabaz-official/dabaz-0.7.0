@@ -18,7 +18,7 @@ export default function Header() {
     <nav
       aria-label="Header"
       className={clsx(
-        "bg-gradient-to-b from-black/20 to-transparent fixed top-0 left-0 right-0 z-[100] p-4 sm:px-6", scrolled && "bg-black/40 border-b-[1px] border-white/10 shadow-sm backdrop-blur-lg"
+        "fixed top-0 left-0 right-0 z-[100] p-4 sm:px-6", scrolled && "bg-black/40 border-b-[1px] border-white/10 shadow-sm backdrop-blur-lg"
       )}
     >
       <div className="mx-auto flex max-w-6xl flex-col justify-between font-medium text-white sm:flex-row sm:items-center">
