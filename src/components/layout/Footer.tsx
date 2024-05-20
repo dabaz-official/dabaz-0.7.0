@@ -1,15 +1,13 @@
 "use client";
 
 export default function Footer() {
+  const today = new Date();
+  const year = today.getFullYear();
+
   return (
     <footer className="w-full items-center justify-center text-center">
       <p className="mb-6">
-        ©️ 2024 DabAZ. All rights reserved
-        <br />
-        Based on a{" "}
-        <a href="https://youtu.be/Cc37uTnbEos?si=bDmUdVjN5Zh9Sz2Y" className="underline hover:text-slate-200 duration-200">
-          Prismic Tutorial
-        </a>
+        ©️ {year} DabAZ. All rights reserved
       </p>
     </footer>
   );
