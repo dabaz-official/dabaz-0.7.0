@@ -1,6 +1,8 @@
 import Spotlights from "@/components/home/Spotlights";
 import { GridBackground } from "@/components/home/GridBackground";
-import { TextGenerateEffect } from "../ui/TextGenerateEffect";
+import { TextGenerateEffect } from "@/components/ui/TextGenerateEffect";
+import MagicButton from "@/components/ui/MagicButton";
+import { Send } from "lucide-react";
 
 const Hero = () => {
   return (
@@ -16,10 +18,13 @@ const Hero = () => {
             className="text-center text-[40px] md:text-5xl lg:text-6xl"
             words="I'm an entrepreneur, ethical hacker, musician, designer, developer, and a problem solver. I love to build things that make a difference in people&apos;s lives."
           />
-
-          <p className="text-center md:tracking-tight mb-4 text-sm md:text-lg lg:text-2xl">
-            Connect
-          </p>
+          <a href="/contact" className="mt-10">
+            <MagicButton
+              title="Get in touch"
+              icon={<Send />}
+              position="left"
+            />
+          </a>
         </div>
       </div>
     </div>
