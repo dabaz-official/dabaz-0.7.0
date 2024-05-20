@@ -104,7 +104,7 @@ export default function RootLayout({
     >
       <body className="flex h-full flex-col">
         <Header />
-        <main className="mt-[4.2rem] sm:mt-[4.4rem]">
+        <main>
           {children}
           <Analytics />
         </main>

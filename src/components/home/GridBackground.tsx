@@ -2,11 +2,8 @@ import React from "react";
 
 export function GridBackground() {
   return (
-    <div className="h-[50rem] w-full bg-black bg-grid-white/[0.2] relative flex items-center justify-center">
-      <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-black [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
-      <p className="text-4xl sm:text-7xl font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 py-8">
-        DabAZ
-      </p>
+    <div className="h-[50rem] w-full bg-black-100 bg-grid-white/[0.04] flex items-center justify-center absolute top-0 left-0">
+      <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-black-100 [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
     </div>
   );
 }
